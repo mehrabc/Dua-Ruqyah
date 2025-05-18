@@ -1,5 +1,5 @@
+
 import { Category, Dua, Subcategory } from "@/types";
-import { div } from "motion/react-client";
 import Image from "next/image";
 import { HomeIcon2 } from "./SideBarItems/HomeIcon2";
 import RightArrow from "./RightArrow";
@@ -23,6 +23,7 @@ const duaInteractions: DuaInteractions[] = [
 ]
 
 export default function DuaFeed({ duas, activeCategory }: DuaFeedProps) {
+
     if (duas.length === 0) {
         return <div className="text-center py-8 text-gray-500">No duas found for this subcategory</div>;
     }
@@ -62,9 +63,10 @@ export default function DuaFeed({ duas, activeCategory }: DuaFeedProps) {
                             </h3>
                         </div>
 
-                        {subcatDuas.map((dua) => (
+                        {subcatDuas.map((dua, index) => (
                             <div
-                                key={dua.dua_id}
+                                key={index}
+                                id={`dua-${dua.dua_id}`}
                                 className="bg-white  shadow py-6 px-4 border-b border-border flex flex-col items-start"
                             >
                                 <div className="flex gap-4 items-start text-darkGreen text-base font-semibold mb-[30px]">

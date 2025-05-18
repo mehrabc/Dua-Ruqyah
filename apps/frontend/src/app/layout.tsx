@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="min-h-screen bg-background ">
+      <body className="min-h-screen bg-background scroll-smooth">
 
         <SideBar />
 

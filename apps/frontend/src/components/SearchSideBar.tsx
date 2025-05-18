@@ -98,9 +98,9 @@ const SearchSideBar = ({ categories, activeCategory, duaList }: Props) => {
                                                                             alt="Dua arrow"
                                                                             className="object-contain self-start" />
 
-                                                                        <div key={index} className="cursor-pointer text-sm">
+                                                                        <Link href={`/dua-categories/${cat.cat_name_en}#dua-${dua.dua_id}`} key={index} className="cursor-pointer text-sm">
                                                                             {dua.dua_name_en}
-                                                                        </div>
+                                                                        </Link>
                                                                     </div>
                                                                 ))
 
