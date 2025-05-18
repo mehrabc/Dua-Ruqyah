@@ -1,0 +1,18 @@
+# Node & build
+node_modules
+dist
+.next
+.env
+.env.local
+turbo
+.cache
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo

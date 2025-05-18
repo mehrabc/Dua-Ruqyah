@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-darkGreen: #40725f;
+  --color-lightGreen: #EEF6EB;
+  --color-green: #D8E7D3;
+  --color-textGreen: #417360;
+  --color-navBar: #FBFFFB;
+  --color-border: #E1EBE1;
+  --color-background: #FBFFFB;
+  --color-dashedLine: #BBCEC2;
+  --breakpoint-largest: 1535px;
+}
+
+@keyframes slideRightOnce {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.route-bar-animation {
+  animation: slideRightOnce 0.8s ease-out forwards;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #116B3F;
+  /* darkGreen */
+  border-radius: 8px;
+  min-height: 33%;
+}
+
+/* Hide scrollbar buttons (top and bottom arrows) */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Optional hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0d5c34;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #116B3F transparent;
+}
+
+/* Custom scrollbar for sidebar only */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #CFDED2 transparent;
+}
+
+/* Webkit (Chrome, Safari, Edge) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 16px;
+  /* Double the size of standard */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #15803d;
+  /* darkGreen */
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.scrollbar-custom::-webkit-scrollbar-button {
+  display: none;
+  /* Removes top/bottom arrows */
+}
+
+
+
+/* REMOVE browser styling */
+input[type='range'].slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 9999px;
+  background: #E1EBE1;
+  outline: none;
+}
+
+/* Webkit track and thumb */
+input[type='range'].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 9999px;
+  background: #116B3F;
+  cursor: pointer;
+
+  /* center thumb */
+}
+
+/* Firefox */
+input[type='range'].slider::-moz-range-thumb {
+  height: 2px;
+  width: 16px;
+  border-radius: 9999px;
+  background: #116B3F;
+  cursor: pointer;
+}
+
+input[type='range'].slider::-moz-range-track {
+  background: transparent;
+}

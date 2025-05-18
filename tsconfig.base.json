@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "module": "commonjs",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "@backend/*": [
+                "apps/backend/src/*"
+            ],
+            "@frontend/*": [
+                "apps/frontend/*"
+            ]
+        }
+    }
+}

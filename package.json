@@ -1,0 +1,17 @@
+{
+  "name": "dua-app",
+  "packageManager": "npm@10.2.4",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.0"
+  }
+}
