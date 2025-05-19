@@ -73,11 +73,11 @@ export default function DuaFeed({ duas, activeCategory }: DuaFeedProps) {
                                     <Image
                                         src={`/dua-card-image.png`}
                                         alt="Dua Card Image"
-                                        width={28}
-                                        height={28}
+                                        width={22}
+                                        height={22}
                                         className="object-cover" />
 
-                                    <h3 className=" font-semibold mb-2">
+                                    <h3 className=" font-semibold">
                                         {dua.dua_id < 10 ? `0${dua.dua_id}` : dua.dua_id}.    {dua.dua_name_en || `Dua ${dua.dua_id}`}
                                     </h3>
                                 </div>
