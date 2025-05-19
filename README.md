@@ -1,4 +1,5 @@
-# 📿 Dua & Ruqyah – Hisnul Muslim App
+# ![logo](https://github.com/user-attachments/assets/e06cf3e5-1498-4091-aa7b-633b0e8b9cae) 
+Dua & Ruqyah – Hisnul Muslim App
 
 A fully responsive and SEO-optimized Islamic web application that presents categorized Duas from *Hisnul Muslim*, with references, translations, and clean UI/UX for both desktop and mobile users.
 
